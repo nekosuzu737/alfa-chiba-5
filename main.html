@@ -39,7 +39,7 @@
              まぁ、なんとも胡散臭く金髪でカタコトな日本語で話していた外人さんだろうか。<br>
               どうやらこの人がメールに書いてあった主犯の仲間らしい。<br>
               話しかけると待っていたぞと反応をしとある問題を渡してきた。<br>
-              渡された謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
+              渡された謎を解き、偽勇者に回答を報告しよう。</p>
             <p class="text-center">困ったときは、相棒に聞いてみよう。</p>
   
             <div class="container">
@@ -63,7 +63,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>「回答を入力してください」</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>「回答をどうぞ」</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -90,8 +90,8 @@ Youtube貼り付けここまで -->
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  「、、正解デす」</div>
               <div class="clear-message__content">偽物の勇者が消えこの世界が元に戻った！<br>
-                それと同時に<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+                それと同時に鍵を渡された<br>
+                ３つステージの謎をとき、この世界を救おう！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -107,14 +107,16 @@ Youtube貼り付けここまで -->
         <!-- STAGE2問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>おかしなRPG世界</h2>
-            <p class="text-center">一番最初にリストアップされた世界は有名なゲームのRPGの世界だった。<br>
-              定番な勇者が出てくる作品だが、、自分が知っている勇者ではないようだ。<br>
-             まぁ、なんとも胡散臭く金髪でカタコトな日本語で話していた外人さんだろうか。<br>
-              どうやらこの人がメールに書いてあった主犯の仲間らしい。<br>
-              話しかけると待っていたぞと反応をしとある問題を渡してきた。<br>
-              渡された謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
-            <p class="text-center">困ったときは、相棒に聞いてみよう。</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>夜の教室</h2>
+            <p class="text-center">二番にリストアップされた世界は夜の教室だった。<br>
+              。<br>
+             ここは小学校の教室らしい、後ろの壁に飾ってある作品の絵がこっちを見ているように見える。<br>
+              、、誰かの忘れ物だろうか、一つの机に女の可愛い人形が置いてある。恐る恐るその場に行くと人形が「こんばんわ」と喋り出した。<br>
+              驚いて後ろに尻餅をつくと「ようやくきたのね、これあげる」とまた問題らしい物を渡してきた。<br>
+              どうやら今回はこの人形がメールに書いてあった主犯の仲間らしい。<br>
+              早く問題を解いてこの世界から早く出よう、、。<br>
+              渡された謎を解き、人形に回答を報告しよう。</p>
+            <p class="text-center">困ったときは、相棒に聞こう。</p>
   
             <div class="container">
               <figure class="image__container">
@@ -162,9 +164,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2  「、、正解デす」</div>
-              <div class="clear-message__content">偽物の勇者が消えこの世界が元に戻った！<br>
-                それと同時に<br>
+              <div class="clear-message__title">STAGE：2  「あら、おめでとう」</div>
+              <div class="clear-message__content"> 後から物音がして少し振り返ってまた人形がいた位置を見ると人形はいなくなっていて鍵だけが置いてあった。<br>
+              
                 4つステージの謎をとき、暗号を見つけ出そう！</div>
               <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
@@ -188,10 +190,13 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>部活の時間</h2>
+              <p class="text-center">最後の世界は学校の体育館<br>
+               ボールが落ちていてバレーやバスケットボールなどの部活をしているらしい。<br>
+                有名なスポーツ漫画の世界らしい。違いはすぐにわかった。主人公の相棒な立場のキャラクターが違う。<br>
+                すぐに目に入ったのであちらも正体がバレたことに気づいているだろう。<br>
+                反応は思ったより早かった「もうバレちゃった〜」と軽くいうと「もうわかってると思うから」と言って問題を渡してきた。<br>
+                リストアップされた世界はこれで最後これが終わればきっと何か変わるはず！問題に挑もう！</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
