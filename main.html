@@ -109,7 +109,6 @@ Youtube貼り付けここまで -->
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>夜の教室</h2>
             <p class="text-center">二番にリストアップされた世界は夜の教室だった。<br>
-              。<br>
              ここは小学校の教室らしい、後ろの壁に飾ってある作品の絵がこっちを見ているように見える。<br>
               、、誰かの忘れ物だろうか、一つの机に女の可愛い人形が置いてある。恐る恐るその場に行くと人形が「こんばんわ」と喋り出した。<br>
               驚いて後ろに尻餅をつくと「ようやくきたのね、これあげる」とまた問題らしい物を渡してきた。<br>
@@ -139,7 +138,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE2解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>「回答を入力してください」</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>「、、回答は？」</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -167,7 +166,7 @@ Youtube貼り付けここまで -->
               <div class="clear-message__title">STAGE：2  「あら、おめでとう」</div>
               <div class="clear-message__content"> 後から物音がして少し振り返ってまた人形がいた位置を見ると人形はいなくなっていて鍵だけが置いてあった。<br>
               
-                4つステージの謎をとき、暗号を見つけ出そう！</div>
+                急いで次の世界へ行こう！</div>
               <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -271,9 +270,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：3　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">STAGE：3　「これ解けちゃうのか〜」</div>
+              <div class="clear-message__content">「これ大事にしなよ？」とまた鍵を渡された<br>
+                これで全ての場所の謎を解いた、ホームに戻ってみよう！</div>
                 <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -288,8 +287,8 @@ Youtube貼り付けここまで -->
         <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>待ち受けた最後とは</h2>
+            <p class="text-center"> 最初に戻ってきた世界は未だバグが残っていた。<br>
               どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
               これらを解決するための最後の謎を解いていこう！</p>
             <figure class="image__container">
