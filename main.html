@@ -38,9 +38,9 @@
               定番な勇者が出てくる作品だが、、自分が知っている勇者ではないようだ。<br>
              まぁ、なんとも胡散臭く金髪でカタコトな日本語で話していた外人さんだろうか。<br>
               どうやらこの人がメールに書いてあった主犯の仲間らしい。<br>
-              話しかけると待っていたぞと反応をし<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
-            <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
+              話しかけると待っていたぞと反応をしとある問題を渡してきた。<br>
+              渡された謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
+            <p class="text-center">困ったときは、相棒に聞いてみよう。</p>
   
             <div class="container">
               <figure class="image__container">
@@ -63,7 +63,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>「回答を入力してください」</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -74,7 +74,7 @@ Youtube貼り付けここまで -->
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
-            <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
+            <a class="link-hint" href="hint1.html" target="hint1">相棒に相談してみる？ ></a>
           </div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
@@ -88,9 +88,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
+              <div class="clear-message__title">STAGE：１  「、、正解デす」</div>
+              <div class="clear-message__content">偽物の勇者が消えこの世界が元に戻った！<br>
+                それと同時に<br>
                 ３つステージの謎をとき、暗号を見つけ出そう！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
@@ -144,9 +144,27 @@ Youtube貼り付けここまで -->
                 </div><!-- /.column -->
                 <!-- STAGE2-1　ここまで -->
 
+                
+           　　　 <div class="row">
+
+                <!-- STAGE2-1　ここから -->
+                <div class="column">
+                  <!-- STAGE2-1問題セクション　ここから -->
+                  <figure class="image__container">
+                    <img src="assets/images/stage.png" alt="">
+                  </figure>
+                  <!-- STAGE2-1問題セクション　ここまで -->
+                  <!-- STAGE2-1解答入力セクション　ここから -->
+                  <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
+                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                  <!-- STAGE2-1解答入力セクション　ここまで -->
+                </div><!-- /.column -->
+                <!-- STAGE2-1　ここまで -->     
+                
 <!-- STAGE2-2 を追加
 
-                <div class="column">
+               
+ <div class="column">
 
                   <figure class="image__container">
                     <img src="assets/images/stage.png" alt="">
