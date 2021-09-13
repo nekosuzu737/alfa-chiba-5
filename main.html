@@ -92,7 +92,7 @@ Youtube貼り付けここまで -->
               <div class="clear-message__content">偽物の勇者が消えこの世界が元に戻った！<br>
                 それと同時に<br>
                 ３つステージの謎をとき、暗号を見つけ出そう！</div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage1'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -166,7 +166,7 @@ Youtube貼り付けここまで -->
               <div class="clear-message__content">偽物の勇者が消えこの世界が元に戻った！<br>
                 それと同時に<br>
                 4つステージの謎をとき、暗号を見つけ出そう！</div>
-              <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -184,7 +184,7 @@ Youtube貼り付けここまで -->
         クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
       ----------------------------------------------------------------------->
-      <div v-if="next['stage2']" id="sectionStage3" class="stage">
+      <div v-if="next['stage2']" id="sectionStage1" class="stage">
         <section>
           <div class="section">
             <div class="container">
